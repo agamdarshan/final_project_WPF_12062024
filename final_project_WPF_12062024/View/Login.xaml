@@ -1,0 +1,23 @@
+﻿<Window x:Class="final_project_WPF_12062024.View.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:final_project_WPF_12062024.View"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800" Background="LightPink">
+    <Canvas>
+        <TextBlock x:Name="TitleTextBlock" Text="User Login:" FontSize="25" FontWeight="Bold" Canvas.Left="310" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+        <Label x:Name="EmailLabel" Content="Email:" Canvas.Top="98" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="200" Width="59"/>
+        <TextBox x:Name="EmailTextBox" Canvas.Left="267" Canvas.Top="98" Width="209" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Top" Height="26"/>
+
+        <Label x:Name="PasswordLabel" Content="Password:" Canvas.Left="200" Canvas.Top="155"/>
+        <TextBox x:Name="PasswordTextBox" Canvas.Left="267" Canvas.Top="159" Width="209" Text="{Binding Password, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
+
+        <Button x:Name="LoginButton" Content="Login" Canvas.Left="276" Canvas.Top="207" Width="200" Click="Login_Click" HorizontalAlignment="Center" Height="30" VerticalAlignment="Top" Background="LightBlue"/>
+
+        <TextBlock Text="If you haven't registered yet, you can register now!" FontSize="18" Canvas.Left="175" Canvas.Top="272" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="RegisterRedirectButton" Content="Register Now" Canvas.Left="276" Canvas.Top="334" Width="200" Click="RegisterRedirectButton_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" Background="LightBlue"/>
+    </Canvas>
+</Window>

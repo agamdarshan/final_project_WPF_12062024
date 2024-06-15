@@ -1,0 +1,32 @@
+﻿<Window x:Class="final_project_WPF_12062024.View.RegistrationView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:final_project_WPF_12062024.View"
+        mc:Ignorable="d"
+         Title="RegistrationView" Height="450" Width="800" Background="LightCyan">
+    <Canvas>
+        <TextBlock x:Name="TitleTextBlock" Text="User Registration:" FontSize="22" FontWeight="Bold" Canvas.Left="300" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center" Height="41" Width="201"/>
+
+        <Label x:Name="EmailLabel" Content="Email:" Canvas.Left="223" Canvas.Top="79" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="EmailTextBox" Canvas.Left="300" Canvas.Top="83" Width="200" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+        <Label x:Name="PasswordLabel" Content="Password:" Canvas.Left="202" Canvas.Top="123" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="PasswordTextBox" Canvas.Left="300" Canvas.Top="127" Width="200" Text="{Binding Password, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+        <Label x:Name="FirstNameLabel" Content="First Name:" Canvas.Left="209" Canvas.Top="163" RenderTransformOrigin="0.402,1.331" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="FirstNameTextBox" Canvas.Left="300" Canvas.Top="167" Width="200" Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+        <Label x:Name="LastNameLabel" Content="Last Name:" Canvas.Left="208" Canvas.Top="199" RenderTransformOrigin="1.343,-2.194" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="LastNameTextBox" Canvas.Left="300" Canvas.Top="206" Width="200" Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+        <Label x:Name="PhoneLabel" Content="Phone:" Canvas.Left="212" Canvas.Top="245" RenderTransformOrigin="0.952,0.464" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="PhoneTextBox" Canvas.Left="300" Canvas.Top="245" Width="200" Text="{Binding Phone, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+        <Label x:Name="AgeLabel" Content="Age:" Canvas.Left="218" Canvas.Top="280" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="AgeTextBox" Canvas.Left="300" Canvas.Top="280" Width="200" Text="{Binding Age, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <Button x:Name="RegisterButton" Content="Register" Canvas.Left="300" Canvas.Top="340" Width="200" Click="Register_Click" HorizontalAlignment="Center" Height="35" VerticalAlignment="Top" Background="LightSlateGray"/>
+    </Canvas>
+</Window>
